@@ -4,35 +4,53 @@
     <title>WEB1_topster</title>
     <meta charset="utf-8">
     <style>
-        #active {
-            color:red;
-        }
-        .saw {
-            color:gray;
+        body {
+            margin:0;
         }
         h1 {
             font-size: 200%;
             text-align: center;
+            border-bottom:1px solid gray;
+            margin:0;
+            padding:20px;
         }
         a {
             color:black;
             text-decoration:none;
         }
+        #grid ol {
+            border-right:1px solid gray;
+            width:100px;
+            margin:0px;
+            padding:20px;
+            padding-left:32px;
+        }
+        #grid {
+            display: grid;
+            grid-template-columns: 150px 1fr;
+        }
+        #article {
+            padding-left:24px;
+        }
     </style>
 </head>
 <body>
-    <h1><a href="index.html" class="saw">김진수</a></h1>
-    <ol>
-        <li><a href="1.html" class="saw" id="active">탑스터</a></li>
-        <li><a href="2.html">향수</a></li>
-        <li><a href="3.html">위스키</a></li>
-    </ol>   
-    <h2>탑스터</h2>
-    나는 <strong><u>포스트락</u>, 슈게이즈</strong> 등을 좋아한다.<p>
-    <img src="img.webp" width="50%">
-    <p style="margin-top:45px;"><a href="https://namu.wiki/w/%ED%8F%AC%EC%8A%A4%ED%8A%B8%20%EB%A1%9D" target="_blank" title="포스트 록 나무위키 설명">포스트 록</a>은 록 음악의 한 종류로서, 전통적인 록 노래의 구조나 코드, 리프보다는 텍스처나 음색의 실험에 집중하는 음악이다. 사실 한 가지 장르라고 하기엔 범위가 지나치게 넓으며, 모던 록처럼 일종의 무브먼트라고 볼 수도 있다.</p>
-    <p>영국의 대중음악 평론가 사이먼 레이놀즈(Simon Reynolds)는 포스트 록이라는 용어를 만든 사람인데, 그의 언급에 따르면 포스트 록은 록의 악기 구성을 사용하면서도 록적이지 않은, 실험적인 사운드를 추구하는 장르를 나타내는 포괄적인 용어로 쓰인다.</p>
-    <p>따라서 같은 포스트 록이라 하더라도 각 나라 별로, 혹은 밴드 별로 나타나는 성격이 판이하게 다르다. 전반적인 흐름을 보자면 세계적으로 나타나는 록의 침체 속에서 록 음악의 전형성을 뛰어넘으려는 시도라고 볼 수 있다. 그 과정에서 여러 가지 다양한 시험 기제들이 나타나고, 그에 따라서 록에 비해서 절충적이며 다른 음악 장르를 끌어안고 가려는 모습이 꽤 강하다.</p>
-    <p>모든 음악 장르가 그러하듯이 포스트 록도 갑자기 완전한 장르로서 등장한 것은 아니다. 포스트 록이란 용어는 1994년 2월에 발매된 Bark Psychosis의 Hex 앨범 리뷰에서 사이먼 레이놀즈가 처음 사용한 것으로 알려져 있으며, 그 이후로 동시대에 등장한 기존과는 다른 사운드를 제시한 음악들을 편의상 묶다 보니 이 용어가 음악 스타일의 이름으로 자연스레 굳어진 것이다.</p>
+    <h1><a href="index.html">김진수</a></h1>
+    <div id="grid">
+        <ol>
+            <li><a href="1.html">탑스터</a></li>
+            <li><a href="2.html">향수</a></li>
+            <li><a href="3.html">위스키</a></li>
+        </ol>
+        <div id="article">
+            <h2>탑스터</h2>
+            <p>나는 <strong><u>포스트락</u>, 슈게이즈</strong> 등을 좋아한다.</p>
+            <img src="img.webp" width="50%">
+            <p style="margin-top:45px;"><a href="https://namu.wiki/w/%ED%8F%AC%EC%8A%A4%ED%8A%B8%20%EB%A1%9D" target="_blank" title="포스트 록 나무위키 설명">포스트 록</a>은 록 음악의 한 종류로서, 전통적인 록 노래의 구조나 코드, 리프보다는 텍스처나 음색의 실험에 집중하는 음악이다. 사실 한 가지 장르라고 하기엔 범위가 지나치게 넓으며, 모던 록처럼 일종의 무브먼트라고 볼 수도 있다.
+            영국의 대중음악 평론가 사이먼 레이놀즈(Simon Reynolds)는 포스트 록이라는 용어를 만든 사람인데, 그의 언급에 따르면 포스트 록은 록의 악기 구성을 사용하면서도 록적이지 않은, 실험적인 사운드를 추구하는 장르를 나타내는 포괄적인 용어로 쓰인다.
+            따라서 같은 포스트 록이라 하더라도 각 나라 별로, 혹은 밴드 별로 나타나는 성격이 판이하게 다르다. 전반적인 흐름을 보자면 세계적으로 나타나는 록의 침체 속에서 록 음악의 전형성을 뛰어넘으려는 시도라고 볼 수 있다. 그 과정에서 여러 가지 다양한 시험 기제들이 나타나고, 그에 따라서 록에 비해서 절충적이며 다른 음악 장르를 끌어안고 가려는 모습이 꽤 강하다.
+            모든 음악 장르가 그러하듯이 포스트 록도 갑자기 완전한 장르로서 등장한 것은 아니다. 포스트 록이란 용어는 1994년 2월에 발매된 Bark Psychosis의 Hex 앨범 리뷰에서 사이먼 레이놀즈가 처음 사용한 것으로 알려져 있으며, 그 이후로 동시대에 등장한 기존과는 다른 사운드를 제시한 음악들을 편의상 묶다 보니 이 용어가 음악 스타일의 이름으로 자연스레 굳어진 것이다.
+        </div>
+    </div>
 </body>
 </html>
