@@ -4,20 +4,39 @@
     <title>WEB1_introduce</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
+    <script>
+        function nightDayHandler(self){
+            var target = document.querySelector('body');
+            if (self.value === 'night') { 
+                target.style.backgroundColor='rgb(70, 49, 40)';
+                target.style.color='rgb(233, 206, 176)';
+                self.value = 'day';
+
+                var alist = document.querySelectorAll('a');
+                var i = 0;
+                while(i < alist.length){
+                    alist[i].style.color = 'powderblue';
+                    i = i + 1;
+                }
+            } else {
+                target.style.backgroundColor='rgb(233, 206, 176)';
+                target.style.color='rgb(70, 49, 40)';
+                self.value = 'night';
+
+                var alist = document.querySelectorAll('a');
+                var i = 0;
+                while(i < alist.length){
+                    alist[i].style.color = 'blue';
+                    i = i + 1;
+                }
+            }
+        }
+    </script>
 </head>
 <body style="background-color:rgb(70, 49, 40);color:rgb(233, 206, 176);">
     <h1><a href="index.html" class="saw" id="active">김진수</a></h1>
     <input type="button" value='day' onclick="
-        var target = document.querySelector('body');
-        if (this.value === 'night') { 
-            target.style.backgroundColor='rgb(70, 49, 40)';
-            target.style.color='rgb(233, 206, 176)';
-            this.value = 'day';
-        } else {
-            target.style.backgroundColor='rgb(233, 206, 176)';
-            target.style.color='rgb(70, 49, 40)';
-            this.value = 'night';
-        }
+       nightDayHandler(this)
     "
     <div id="grid">
         <ol>
