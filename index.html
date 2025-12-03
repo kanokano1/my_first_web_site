@@ -5,8 +5,16 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
 </head>
-<body style="background-color:rgb(73, 53, 47);color:rgb(230, 218, 180);">
+<body style="background-color:rgb(70, 49, 40);color:rgb(233, 206, 176);">
     <h1><a href="index.html" class="saw" id="active">김진수</a></h1>
+    <input type="button" value='night' onclick="
+        document.querySelector('body').style.backgroundColor='rgb(70, 49, 40)';
+        document.querySelector('body').style.color='rgb(233, 206, 176)';
+    ">
+    <input type="button" value='day' onclick="
+        document.querySelector('body').style.backgroundColor='rgb(233, 206, 176)';
+        document.querySelector('body').style.color='rgb(70, 49, 40)';
+">
     <div id="grid">
         <ol>
             <li><a href="1.html" class="saw">탑스터</a></li>

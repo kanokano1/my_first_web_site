@@ -26,7 +26,7 @@ a {
 #article {
     padding-left:24px;
 }
-@media (max-width:800px) {
+@media (max-width:1000px) {
     #grid ol {
         border-right: none;
     }
